@@ -1,0 +1,42 @@
+                                              Introduction to CSS and Styling Basics
+
+ Theory Assignment
+
+1.) Explain the difference between inline, internal, and external CSS.
+
+CSS (Cascading Style Sheets) is essential for defining the presentation of web pages, including layout, colors, and fonts. There are three primary methods to apply CSS:
+
+Inline CSS: Applied directly within an HTML element's style attribute, affecting only that specific element.
+
+Internal CSS: Defined within a <style> tag in the <head> section of an HTML document, influencing the entire page.
+
+External CSS: Contained in a separate .css file linked to the HTML document, allowing for consistent styling across multiple pages.
+
+
+
+
+2.) Describe CSS selectors and list the types of selectors (e.g., element, class, id).
+
+CSS selectors are used to target specific HTML elements for styling. They act as patterns to locate the elements you want to modify. There are various types of selectors, including element, class, ID, attribute, pseudo-class, and pseudo-element selectors, along with combinators and selector lists. 
+
+
+
+
+3.) Discuss the CSS box model and its components
+
+The CSS Box Model is a fundamental concept that defines how HTML elements are displayed and calculated on a web page. It treats every element as a rectangular box with four main components: content, padding, border, and margin. These components control an element's size, spacing, and appearance. 
+
+Here's a breakdown of each component:
+
+Content:
+This is the area where the actual content of the element is displayed, like text, images, or other elements. The width and height properties define the content area's size. 
+
+Padding:
+This is the space between the content and the border of an element, providing internal spacing. It can be controlled using the padding property. 
+
+Border:
+This is the line that surrounds the padding and content area, defining the outer edge of the element. It's controlled by the border property. 
+
+Margin:
+This is the space outside the border of an element, which determines the distance between the element and its neighboring elements. It's controlled by the margin property. 
+
