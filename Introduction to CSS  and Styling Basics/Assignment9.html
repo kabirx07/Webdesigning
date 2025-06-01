@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            padding: 20px;
+
+        }
+        .container {
+            min-width: 100vh;
+            margin: auto;
+        }
+
+        header, section, footer {
+            margin: 10px;
+            padding: 20px;
+            background: black;
+            text-align: center;
+            color: white;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            header , footer {
+                grid-column: span 2;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            body {
+                font-size: 20px;
+            }
+        }
+    </style>
+       
+</head>
+<body>
+    <div class="container">
+    <header>Header</header>
+    <section>Section 1</section>
+    <section>Section 2</section>
+    <section>Section 3</section>
+    <footer>Footer</footer>
+  </div>
+</body>
+</html>

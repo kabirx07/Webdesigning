@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a:link {
+            color: blue;
+        }
+        a:visited {
+            color: purple;
+        }
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: orange;
+        }
+
+        p::first-line {
+            font-weight: bold;
+            color: darkblue;
+        }
+
+        h1::before{
+            content:"*";
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome</h1>
+ 
+
+  <a href="#">Home</a><br />
+  <a href="#">About</a><br />
+  <a href="#">Contact</a><br />
+
+  <p>
+    This is a sample paragraph to demonstrate how pseudo-elements like ::first-line work.
+    You can style only the first line of this text.
+  </p>
+</body>
+</html>

@@ -1,0 +1,53 @@
+                                                          ASSIGNMENT 1
+
+Theory Assignment 
+
+
+1.)Explain the structure of an HTML document and the purpose of DOCTYPE
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+
+<body>
+The content of the document......
+</body>
+
+</html>
+
+An HTML document has a structured format starting with a DOCTYPE declaration, followed by the root element <html>, and then the document's content within the <head> and <body> elements. The DOCTYPE declaration specifies the document type and version, informing the browser how to interpret the HTML code. 
+
+
+
+2.)List and explain at least five common HTML tags used in website design.
+
+Here are five common HTML tags used in website design: 
+<body>: This tag defines the main content of a webpage, which is what users will actually see when they visit the page.
+
+<p>: The <p> tag defines a paragraph of text.
+
+<h1> to <h6>: These tags define headings for sections on the page, with <h1> being the most important and <h6> the least.
+
+<a>: The <a> tag is used to create hyperlinks, allowing users to navigate to other pages or sections on the same page.
+
+<img>: The <img> tag is used to embed images in the webpage.
+
+
+
+3.)Describe the difference between block-level and inline elements in HTML
+
+
+In HTML, block-level elements always start on a new line and take up the full width available, while inline elements display in a line and only occupy the necessary space. Block elements are generally used for structural components, like paragraphs, while inline elements are used for formatting text or creating links. 
+
+Two commonly used block elements are: <p> and <div>.
+
+
+
+
+
+
+
+

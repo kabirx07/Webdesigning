@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin: 10px;
+            
+            
+
+        }
+
+        .primary {
+            background-color: lightskyblue;
+        }
+        .primary:hover {
+            background-color: deepskyblue;
+            transform: scale(1.05);
+        }
+        .secondary {
+            background-color: lightgreen;
+        }
+        .secondary:hover {
+            background-color: green;
+            transform: scale(1.05);
+        }
+
+        .danger {
+            background-color: lightcoral;
+        }
+        .danger:hover {
+            background-color: red;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+     <button class="primary">Primary</button>
+  <button class="secondary">Secondary</button>
+  <button class="danger">Danger</button>
+</body>
+</html>
