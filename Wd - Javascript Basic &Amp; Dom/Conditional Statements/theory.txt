@@ -1,0 +1,7 @@
+Theory Assignments
+
+
+1.) Explain if, else if, and else statements.
+2.) What is a nested conditional statement?
+3.) Explain switch-case with syntax.
+4.) Compare if-else and switch-case statements.

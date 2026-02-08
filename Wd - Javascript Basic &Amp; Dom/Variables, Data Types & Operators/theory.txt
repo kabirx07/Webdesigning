@@ -1,0 +1,150 @@
+Theory Assignments
+
+
+1.) Explain var, let, and const with examples.
+
+
+A) var
+
+a. Function-scoped
+b. Can be redeclared and updated
+
+Example:
+
+var a = 10;
+var a = 20; // allowed
+
+
+B) let
+
+a. Block-scoped
+b. Cannot be redeclared (same block)
+c. Can be updated
+
+Example:
+
+let b = 10;
+b = 20; // allowed
+
+
+C) Const
+
+a. Block-scoped
+b. Cannot be redeclared or updated
+
+Example:
+
+const c = 10;
+// c = 20; // not allowed
+
+
+
+2.) What are JavaScript data types? Explain string, number, boolean, array, and object.
+
+
+-> JavaScript Data Types
+
+JavaScript has different data types used to store different kinds of values.
+
+1) String
+a. Represents text.
+b. Written inside quotes.
+
+Example:
+let name = "Alice";
+
+2) Number
+a. Represents numeric values (both integers and decimals).
+
+Example:
+let age = 25;
+let price = 19.99;
+
+3) Boolean
+a. Represents true or false values.
+b. Often used in conditions.
+
+Example:
+let isOnline = true;
+
+4) Array
+a. Stores multiple values in a single variable.
+b. Values are placed inside [ ].
+
+Example:
+let colors = ["red", "blue", "green"];
+
+5) Object
+a. Stores data in key-value pairs.
+b. Values are inside { }.
+
+Example:
+let person = { name: "Alice", age: 25 };
+
+
+
+3.) Explain variable scope and memory concept in JavaScript.
+
+
+-> Variable Scope
+
+Variable scope decides where a variable can be accessed.
+
+a. Global scope: Available everywhere.
+
+b. Function scope (var): Only inside the function where it is declared.
+
+c. Block scope (let, const): Only inside { } blocks like if, loops, etc.
+
+-> Memory Concept
+
+JavaScript stores values in two main memory areas:
+
+a. Stack: Stores primitive values (number, string, boolean). Fast and direct.
+
+b. Heap: Stores objects, arrays, and functions. Variables store a reference to these values.
+
+JavaScript also uses garbage collection to free memory that is no longer needed
+
+
+
+4.) Describe arithmetic, comparison, logical, and ternary operators.
+
+
+1. Arithmetic Operators
+Used for basic math operations like addition, subtraction, multiplication, and division.
+Example: 10 + 5
+
+2. Comparison Operators
+Compare two values and return true or false.
+Example: 10 > 5
+
+3. Logical Operators
+Combine or invert conditions (AND, OR, NOT).
+Example: true && false
+
+4. Ternary Operator
+A shorthand if–else used for quick decisions.
+Example: age >= 18 ? "Adult" : "Minor"
+
+
+
+5.) What is the difference between == and ===?
+
+
+== (Loose Equality)
+
+Compares values only.
+Performs type conversion before comparing.
+Example:
+
+5 == "5"; // true (string converted to number)
+
+
+=== (Strict Equality)
+
+Compares both value and data type.
+No type conversion is done.
+Example:
+
+5 === "5"; // false (different types)

@@ -1,0 +1,89 @@
+Theory Assignments
+
+
+1.) What is JavaScript? Explain its role in modern web development.
+
+JavaScript is a versatile, high-level programming language that is a core technology of the World Wide Web, 
+alongside HTML and CSS
+
+
+Role of JavaScript in Modern Web Development
+
+a. Adds interactivity to web pages (animations, forms, dynamic content).
+
+b. Builds modern UIs using frameworks like React, Vue, and Angular.
+
+c. Handles server-side logic with Node.js.
+
+d. Enables async data fetching (APIs, real-time updates).
+
+e. Powers mobile and desktop apps through cross-platform tools.
+
+f. Controls browser features using built-in APIs (storage, media, geolocation).
+
+
+
+2.) Where does JavaScript execute? Explain client-side execution.
+
+->JavaScript executes in two main environments:
+
+1. In the browser (Client-side)
+2. On the server (Server-side, e.g., Node.js)
+
+
+Client-side execution
+
+Client-side JavaScript runs directly in the user’s browser. The browser’s JS engine (like V8 or SpiderMonkey)
+executes the code after the webpage loads. It lets the script interact with the page’s elements (DOM), handle 
+user actions, update content instantly, and make thepage dynamic without needing to reload. This reduces server 
+load and improves user experience.
+
+
+
+3.) Differentiate between internal and external JavaScript.
+
+
+-> Internal JavaScript
+
+a. Written inside the HTML file using the <script> tag.
+
+b. Placed within the <head> or <body>.
+
+c. Good for small scripts.
+
+d. Harder to maintain if the code grows.
+
+
+-> External JavaScript
+
+a. Written in a separate .js file.
+
+b. Linked to the HTML using the src attribute in <script>.
+
+c. Better for larger projects and reusability.
+
+d. Makes code cleaner and easier to maintain.
+
+
+
+4.) What is the use of console.log()?
+
+
+console.log() is used to print messages to the browser’s console.
+
+-> Uses of console.log()
+
+a. To debug code by checking values of variables.
+
+b. To display messages, errors, or results during development.
+
+c. To track program flow and see what code is running.
+
+
+5.) Explain how debugging is done using browser developer tools.
+
+
+Debugging with browser developer tools is done by opening DevTools (F12) and using features like the Console 
+to view errors and log messages, and the Sources tab to set breakpoints. When a breakpoint is hit, the code 
+pauses, allowing you to inspect variables, step through code, and find where things go wrong. The Network tab 
+can also be used to check API calls and responses.
