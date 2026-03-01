@@ -1,0 +1,83 @@
+Theory Assignments
+
+
+1.) What is DOM?
+
+The DOM (Document Object Model) is a programming interface for web pages.
+It represents the structure of an HTML document as a tree of objects. Using JavaScript, you can interact with this tree to:
+
+1.Read or change content
+2.Modify styles
+3.Add or remove elements
+4.Handle events (click, submit, hover, etc.)
+
+In simple terms:
+The DOM lets JavaScript control and update a web page dynamically.
+
+
+2.) Explain getElementById() and querySelector().
+
+
+1. getElementById()
+
+a. Selects one element by its unique id.
+
+b. Syntax:
+document.getElementById("myId");
+
+c. Fast and commonly used.
+
+
+2. querySelector()
+
+a. Selects the first element that matches a CSS selector.
+
+b. Syntax:
+
+document.querySelector(".myClass");     // class
+document.querySelector("#myId");        // id
+document.querySelector("p");            // tag
+document.querySelector("div > span");   // complex selector
+
+c. More powerful and flexible.
+
+
+3.) How can text and style be changed using JavaScript?
+
+Changing Text:
+
+You can change text using properties like:
+
+innerText
+textContent
+innerHTML
+
+Example:
+
+document.getElementById("title").innerText = "Hello World!";
+
+Changing Style:
+
+You can change CSS using the .style property.
+
+Example:
+
+document.getElementById("title").style.color = "blue";
+document.getElementById("title").style.fontSize = "24px";
+
+
+4.) What is class manipulation?
+
+Class manipulation means adding, removing, or toggling CSS classes on HTML elements
+using JavaScript.
+
+The main tool is the classList property.
+
+Examples:
+
+element.classList.add("active");        // add a class
+element.classList.remove("hidden");     // remove a class
+element.classList.toggle("dark-mode");  // add/remove depending on state
+element.classList.contains("active");   // check if class exists
+
+This is very useful for animations, themes, menus, and interactive UI behavior.

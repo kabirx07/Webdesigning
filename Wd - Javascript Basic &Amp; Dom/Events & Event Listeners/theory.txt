@@ -1,0 +1,98 @@
+Theory Assignments
+
+1.) What is an event in JavaScript?
+
+An event in JavaScript is an action or occurrence that happens in the browser, such as:
+
+1. Clicking a button
+2. Typing in an input box
+3. Moving the mouse
+4. Loading a webpage
+5. Changing a form value
+
+JavaScript can detect and respond to these events using event handlers.
+
+
+2.) Explain onclick and onchange events.
+
+onclick Event:
+
+a. Triggered when a user clicks an element.
+b. Commonly used with buttons, images, links, etc.
+
+Example:
+
+<button onclick="alert('Clicked!')">Click Me</button>
+
+
+onchange Event
+
+a. Triggered when the value of an input changes and the user leaves the field.
+b. Frequently used with text fields, dropdowns, checkboxes.
+
+Example:
+
+<input type="text" onchange="console.log('Value changed!')">
+
+
+
+3.) What is addEventListener()?
+
+
+addEventListener() is a method used to attach an event to an element without 
+overwriting existing events.
+
+Syntax:
+
+element.addEventListener("eventName", function);
+
+Example:
+
+document.getElementById("btn").addEventListener("click", function() {
+    alert("Button clicked!");
+});
+
+Benefits:
+
+1.Can attach multiple events to the same element
+2.Cleaner and more modern than inline events
+3.Supports advanced features like event bubbling and capturing
+
+
+
+4.) Explain event bubbling.
+
+Event bubbling is the process where an event starts from the innermost element 
+and moves upward through its parent elements.
+
+Example:
+If you click a <span> inside a <div>:
+
+1. span click event executes
+2. Then the parent div click event executes
+3. Then the parent body, and so on
+
+This is the default event flow in JavaScript.
+Visualization:
+
+<span> → div → body → html → document
+
+
+
+5.) What is default event prevention?
+
+Some HTML elements have default browser behaviors, such as:
+
+1. Clicking a link → opens a new page
+2. Submitting a form → reloads the page
+3. Right-click → shows context menu
+
+You can stop this default action using:
+event.preventDefault();
+
+Example:
+
+document.querySelector("a").addEventListener("click", function(event){
+    event.preventDefault();
+    console.log("Link click prevented!");
+});

@@ -1,0 +1,75 @@
+Theory Assignments
+
+1.) What is form validation? Why is it required?
+
+
+Form validation is the process of ensuring that the data entered by a user into a web form is correct, 
+complete, and secure before it is sent to the server.
+
+Why it is required
+
+a. Prevents invalid data (e.g., wrong email format, empty fields).
+b. Improves user experience by catching errors early (client-side validation).
+c. Protects the server from malicious inputs (server-side validation).
+d. Ensures data integrity by accepting only properly formatted values.
+e. Reduces server load by blocking incorrect submissions early.
+
+
+2.) Explain email validation using regular expressions.
+
+Email validation ensures that an entered email matches the general pattern of a real email address.
+
+A common regular expression (regex) for email validation is:
+/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+
+How this regex works:
+
+a.) ^[a-zA-Z0-9._%+-]+
+The local part (before @): letters, digits, dot, underscore, percent, plus, hyphen.
+
+b.) @
+Mandatory @ symbol.
+
+c.) [a-zA-Z0-9.-]+
+Domain name: letters, digits, dots, hyphens.
+
+d.) \.[a-zA-Z]{2,}$
+Top-level domain (e.g., .com, .org), at least 2 letters.
+
+
+
+3.) Explain password validation rules.
+
+Password validation ensures that a user creates a strong and secure password.
+
+Common password validation rules:
+
+1. Minimum length (e.g., at least 8 characters).
+2. At least one uppercase letter (A–Z).
+3. At least one lowercase letter (a–z).
+4. At least one digit (0–9).
+5. At least one special character (e.g., @, #, $, %, &).
+6. No spaces allowed.
+7. Should not be easily guessable (like “123456”, “password”, etc.).
+
+
+4.) What are the disadvantages of using innerHTML?
+
+Using innerHTML can cause several issues:
+
+Disadvantages
+
+1.) Security risk (XSS attacks)
+If user input is inserted directly, malicious scripts may run.
+
+2.) Performance overhead
+Replaces the entire HTML content (even if you modify just a small part), making the browser re-parse all HTML.
+
+3.) Event handlers removed
+Replacing content using innerHTML removes existing event listeners inside that element.
+
+4.) Invalid HTML problems
+If you insert malformed HTML, the browser may behave unexpectedly.
+
+5.) No direct script execution
+JavaScript added within innerHTML does not run automatically in many browsers.

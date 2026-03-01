@@ -1,0 +1,114 @@
+Theory Assignments
+
+
+1.) What is looping? Why is it required?
+
+Looping means repeating a block of code multiple times.
+It is required to perform repetitive tasks efficiently without writing the same 
+code again, making programs shorter and faster.
+
+Common loops include:
+
+for loop
+while loop
+do…while loop
+
+Why is it required?
+a. To avoid writing the same code again and again
+b. To handle repetitive tasks (like printing numbers, processing lists, etc.)
+c. To make programs faster, cleaner, and more efficient
+
+
+
+2.) Explain for, while, and do-while loops.
+
+1. for Loop
+
+Used when you know how many times you want to repeat the code.
+
+Example:
+for (let i = 1; i <= 5; i++) {
+  console.log(i);
+}
+This prints numbers 1 to 5.
+
+2. while Loop
+
+Runs as long as the condition is true.
+Used when you don’t know the exact number of repetitions beforehand.
+
+Example:
+let i = 1;
+while (i <= 5) {
+  console.log(i);
+  i++;
+}
+
+3. do–while Loop
+
+Similar to while, but the code runs at least once, even if the condition is false.
+
+Example:
+let i = 1;
+do {
+  console.log(i);
+  i++;
+} while (i <= 5);
+
+
+
+3.) What is for-of loop? When is it used?
+
+What is the for-of Loop?
+
+The for-of loop is used to iterate over iterable objects like arrays, strings, maps, sets, 
+etc.It gives you each value directly, making it simpler than a traditional for loop.
+
+Example:
+let colors = ["red", "blue", "green"];
+
+for (let color of colors) {
+  console.log(color);
+}
+This prints each color.
+
+
+Use the for-of loop when you want to:
+
+1. Loop through values of an array or string
+
+2. Write cleaner, more readable code
+
+3. Avoid dealing with indexes manually
+
+4. Iterate through data structures like Maps, Sets, and more
+
+
+
+4.) Explain break and continue statements.
+
+a.) break Statement
+
+The break statement is used to stop a loop immediately.
+When break runs, the loop ends and control moves to the code after the loop.
+
+Example:
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) break;
+  console.log(i);
+}
+
+Output: 1, 2 (loop stops at 3)
+
+
+b.) continue Statement
+
+The continue statement skips the current iteration of the loop and moves to the next one.
+
+Example:
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) continue;
+  console.log(i);
+}
+
+Output: 1, 2, 4, 5 (3 is skipped)

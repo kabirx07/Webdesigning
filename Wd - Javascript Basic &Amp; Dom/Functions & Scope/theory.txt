@@ -1,0 +1,125 @@
+Theory Assignments
+
+
+1.) What is a function? Explain function declaration and calling.
+
+A function is a reusable block of code designed to perform a specific task. 
+Instead of writing the same code repeatedly, you can place it inside a function 
+and “call” the function whenever you need it.
+
+
+function declaration means defining a function—giving it a name and specifying 
+what it does.
+for eg.
+
+function greet(name) {
+    console.log("Hello, " + name);
+}
+
+
+Once you declare a function, you must call it to make it run.
+
+Example:
+greet("Alice");
+
+
+2.) Explain parameters and return values.
+
+
+Parameters are variables listed inside the parentheses when you declare a function.
+They act as placeholders for the values the function will receive.
+
+Example:
+function greet(name) {
+    console.log("Hello, " + name);
+}
+
+name is a parameter
+
+It represents a value you will pass later (like "Alice")
+
+You can have multiple parameters:
+
+function add(a, b) {
+    console.log(a + b);
+}
+
+Here, a and b are parameters.
+
+Return Value:
+A return value is the output that a function sends back using the return keyword.
+
+Example:
+function add(a, b) {
+    return a + b;  // Returns the sum
+}
+
+let result = add(5, 3);
+console.log(result);  // Output: 8
+
+return a + b sends the result back to where the function was called
+
+The returned value can be stored in a variable (result)
+
+
+
+3.) What are arrow functions?
+
+
+Arrow functions are a shorter way to write functions in JavaScript using the => syntax.
+
+Example:
+const add = (a, b) => a + b;
+
+Key points:
+1. Short and clean syntax
+2. Can return values without using return (implicit return)
+3. Do not have their own this keyword
+4. Great for simple functions and callbacks
+
+
+
+4.) What is function scope?
+
+
+Function Scope 
+
+1. Variables declared with var, let, or const inside a function are private to that function.
+2. They cannot be used or accessed outside the function.
+
+Example:
+function test() {
+    let x = 10;   // x is inside function scope
+    console.log(x);  //  Works
+}
+
+test();
+console.log(x);    //  Error: x is not defined.
+
+
+
+5.) Explain modularity and code reusability.
+
+Modularity means organizing your code into separate, logical parts (like functions or modules).
+Each part handles a specific task, making the program easier to manage.
+
+Example:
+
+function calculateTotal() { ... }
+function applyDiscount() { ... }
+
+Each function is its own module with a clear purpose.
+
+
+
+Code reusability means writing code that can be used multiple times instead of rewriting it.
+Functions, modules, and classes help you reuse logic across the program.
+
+Example:
+
+function add(a, b) {
+    return a + b;
+}
+
+add(5, 3);
+add(10, 2); // same function reused

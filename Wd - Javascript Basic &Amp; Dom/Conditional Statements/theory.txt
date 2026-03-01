@@ -2,6 +2,85 @@ Theory Assignments
 
 
 1.) Explain if, else if, and else statements.
+
+
+These are fundamental control flow structures:
+
+if: Executes a block of code if a condition is true
+else if: Tests another condition if the previous if was false
+else: Executes if all previous conditions are false
+
+example
+let age = 20;
+
+if (age < 13) {
+  console.log("Child");
+} else if (age < 18) {
+  console.log("Teenager");
+} else if (age < 65) {
+  console.log("Adult");
+} else {
+  console.log("Senior");
+}
+
+
 2.) What is a nested conditional statement?
+
+
+A conditional statement inside another conditional statement:
+
+Nested conditionals allow checking multiple conditions in a hierarchy, but complex 
+nesting should be avoided for readability.
+
+example
+let score = 85;
+let attendance = 90;
+
+if (score >= 60) {
+  if (attendance >= 80) {
+    console.log("Pass with Distinction");
+  } else {
+    console.log("Pass");
+  }
+} else {
+  console.log("Fail");
+}
+
+
 3.) Explain switch-case with syntax.
+
+Evaluates an expression once and executes matching case blocks:
+
+Syntax: Each case checks for equality; break prevents fall-through; default runs if no 
+cases match.
+
+example
+let day = 3;
+
+switch (day) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  default:
+    console.log("Invalid day");
+}
+
+
+
 4.) Compare if-else and switch-case statements.
+
+If–Else
+a. Used for multiple conditions or ranges.
+b. Works with comparisons (>, <, ==, etc.).
+c. More flexible but can become long and messy with many conditions.
+
+Switch–Case
+
+a. Used for checking one value against multiple exact matches.
+b. Cleaner and easier to read when many cases depend on the same value.
