@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Course List</h2>
+    <ul id="courseList"></ul>
+
+    <script>
+       let courses = ["HTML", "CSS", "JavaScript", "UI/UX", "Bootstrap"];
+
+       for (let i = 0; i < courses.length; i++) {
+       document.getElementById("courseList").innerHTML += "<li>" + courses[i] + "</li>";
+    }
+</script>
+
+</body>
+</html>

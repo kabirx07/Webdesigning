@@ -4,17 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <script>
-        var name = "Kabir";
-        let age = 20;
-        const country = "India";
+        function greet(name = "guest") {
+            console.log("Hello " + name);
+        }
 
-
-        console.log("Name:", name);
-        console.log("Age:", age);
-        console.log("Country:", country);
-
+        greet("Kabir");
+        greet();
     </script>
 </head>
 <body>

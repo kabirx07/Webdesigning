@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let products = [
+            {name: "Laptop", price: 60000},
+            {name: "Mobile", price: 20000},
+            {name: "Headphones", price: 3000},
+            {name: "Keyboard", price: 1500}
+    ];
+
+    let expensiveProducts = products.filter(function(product) {
+    return product.price > 5000;
+    });
+
+    console.log("Products with price greater than 5000:");
+    console.log(expensiveProducts);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
